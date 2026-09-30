@@ -1,0 +1,73 @@
+@import "tailwindcss";
+
+@theme {
+  --font-serif: "Playfair Display", Georgia, serif;
+  --font-sans: "Plus Jakarta Sans", system-ui, -apple-system, sans-serif;
+  
+  --color-botanical-50: #f3f8f2;
+  --color-botanical-100: #e4f0e2;
+  --color-botanical-200: #c8e1c5;
+  --color-botanical-300: #9ecb99;
+  --color-botanical-400: #6eae67;
+  --color-botanical-500: #4a8e43;
+  --color-botanical-600: #397233;
+  --color-botanical-700: #2d5a27;
+  --color-botanical-800: #264823;
+  --color-botanical-900: #203b1e;
+  --color-botanical-950: #0d1f0c;
+
+  --color-terracotta-50: #fdf7f3;
+  --color-terracotta-100: #f9eee6;
+  --color-terracotta-200: #f2d9cb;
+  --color-terracotta-300: #e6bba5;
+  --color-terracotta-400: #d69476;
+  --color-terracotta-500: #c4714d;
+  --color-terracotta-600: #b15535;
+  --color-terracotta-700: #93422a;
+  --color-terracotta-800: #783827;
+  --color-terracotta-900: #623023;
+
+  --color-warm-cream: #FAF7F2;
+  --color-warm-card: #FFFFFF;
+}
+
+body {
+  font-family: var(--font-sans);
+  background-color: #FAF7F2;
+  color: #1F2E1E;
+  margin: 0;
+  padding: 0;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+h1, h2, h3, .font-serif {
+  font-family: var(--font-serif);
+}
+
+/* Custom smooth scroll and transitions */
+html {
+  scroll-behavior: smooth;
+}
+
+/* Custom scrollbars */
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+::-webkit-scrollbar-track {
+  background: #f1ede6;
+}
+::-webkit-scrollbar-thumb {
+  background: #c3d4c0;
+  border-radius: 4px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #9ab897;
+}
+
+/* Botanical subtle pattern overlay class */
+.bg-grain {
+  background-image: radial-gradient(rgba(45, 90, 39, 0.04) 1px, transparent 0);
+  background-size: 24px 24px;
+}
